@@ -3,13 +3,13 @@ class Product {
         this.name = name
     }
     init() {
-        alert('init')
+        console.log('init')
     }
     fun1() {
-        alert('fun1')
+        console.log('fun1')
     }
     fun2() {
-        alert('fun2')
+        console.log('fun2')
     }
 }
 
@@ -18,3 +18,9 @@ class Creator {
         return new Product()
     }
 }
+
+//测试
+let creator = new Creator()
+let p = creator.create('p1')
+p.init()
+p.fun1()
